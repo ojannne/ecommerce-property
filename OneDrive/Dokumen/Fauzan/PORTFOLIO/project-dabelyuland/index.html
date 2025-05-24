@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dabelyuland</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- START: Tambahkan ini di dalam <head> untuk SEO -->
+    <meta
+      name="description"
+      content="Jual beli properti terbaik - rumah, tanah, villa, dan bangunan di Indonesia."/>
+    <meta
+      name="keywords"
+      content="properti, rumah dijual, tanah dijual, villa, properti Indonesia, e-commerce"/>
+    <meta name="author" content="Dabelyuland"/>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jual Beli Properti Terpercaya - Dabelyuland">
+    <meta property="og:description" content="Temukan rumah impian, apartemen, dan properti terbaik hanya di Nama Website Kamu. Penawaran lengkap dan terpercaya.">
+    <meta property="og:image" content="https://www.Dabelyuland.com/images/Dabelyuland.jpg">
+    <meta property="og:url" content="https://www.Dabelyuland.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dabelyuland">
+    <!-- Untuk Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jual Beli Properti Terpercaya - Nama Website Kamu">
+    <meta name="twitter:description" content="Temukan rumah impian, apartemen, dan properti terbaik hanya di Nama Website Kamu.">
+    <meta name="twitter:image" content="https://www.Dabelyuland.com/images/Dabelyuland.jpg">
+    <!-- END: SEO -->
+    <!-- Favicon -->
+    <link href="img/icon/dabelyuland.png" rel="icon"/>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"/>
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"/>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- filter -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- Info Bar -->
+    <div class="py-2 border-bottom">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <!-- Teks hanya muncul di desktop -->
+        <span class="small text-muted d-none d-md-inline"
+          >Paket Pemasaran Gratis untuk konsultasi</span
+        >
+
+        <!-- Ikon sosmed -->
+        <div class="d-flex align-items-center gap-3 ms-auto">
+          <!-- Teks "Follow us on" hanya di desktop -->
+          <span class="small text-muted">Ikuti Kami</span>
+
+          <!-- Icon Sosial Media -->
+          <a
+            href="https://www.youtube.com/@hardiwidyanto"
+            target="_blank"
+            class="text-muted"
+          >
+            <img
+              src="img/media/youtube_icon.png"
+              alt="Facebook"
+              style="width: 24px; height: 24px"
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61562823042702"
+            target="_blank"
+            class="text-muted"
+          >
+            <img
+              src="img/media/facebook_icon.png"
+              alt="YouTube"
+              style="width: 24px; height: 24px"
+          /></a>
+          <a
+            href="https://www.tiktok.com/@dabelyuland.indonesia?_t=ZS-8w6S74mJLGh&_r=1"
+            target="_blank"
+            class="text-muted"
+          >
+            <img
+              src="img/media/tiktok_icon.png"
+              alt="TikTok"
+              style="width: 24px; height: 24px"
+          /></a>
+          <a href="https://www.instagram.com/hardi.widyanto/" target="_blank">
+            <img
+              src="img/media/instagram_icon.png"
+              alt="Instagram"
+              style="width: 24px; height: 24px"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-hijau"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+      <!-- Navbar Start -->
+      <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <a
+            href="#"
+            class="navbar-brand d-flex align-items-center text-center"
+          >
+            <div class="icon p-2 me-2">
+              <img
+                class="img-fluid"
+                src="img/icon/logo-green.svg"
+                alt="Icon"
+                style="width: 50px; height: 50px"
+              />
+            </div>
+            <h4 class="m-0 text-black">Dabelyuland</h4>
+          </a>
+
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto align-items-center">
+              <div class="nav-item text-center d-lg-none mt-3 px-3">
+                <h6 class="fw-bold text-muted">Akun</h6>
+                <a href="login.html#login" class="d-flex align-items-center justify-content-center text-decoration-none">
+                  <div class="d-flex align-items-center text-dark">
+                    <i class="bi bi-person me-2"></i>
+                    <span class="fw-semibold text-dark">Login / Register</span>
+                  </div>
+                </a>
+              </div>
+              <a href="index.html" class="nav-item nav-link active">Beranda</a>
+              <a href="shop.html" class="nav-item nav-link">Properti</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portofolio</a>
+              
+
+              <!-- Akun/User Icon -->
+              <div class="nav-item dropdown ms-3">
+                <a href="#" class="btn-icon d-none d-lg-flex icon-hover">
+                  <i class="bi bi-person me-2"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end rounded-3 shadow-sm">
+                <h6 class="dropdown-header">Akun</h6>
+                <a href="login.html#login" class="dropdown-item d-flex align-items-center">
+                  <i class="bi bi-person me-2"></i> Login / Register
+                  <i class="bi bi-chevron-right ms-auto"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+
+      <div class="container-fluid p-0">
+        <!-- Slider -->
+        <div id="mainBanner" class="carousel slide" data-bs-ride="carousel">
+          <!-- Tombol Indikator -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#mainBanner"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mainBanner"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mainBanner"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!-- Isi Slider -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="shop.html"
+                ><img
+                  src="img/banner/banner-iklan-1.png"
+                  class="d-block w-100"
+                  alt="Banner 1"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="img/banner/banner-iklan-2.png"
+                  class="d-block w-100"
+                  alt="Banner 2"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="img/banner/banner-iklan-3.png"
+                  class="d-block w-100"
+                  alt="Banner 3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Tombol Navigasi Kiri/Kanan -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mainBanner"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mainBanner"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <!-- Slider End -->
+      <div class="container py-4">
+        <div class="row justify-content-center text-center g-3" id="fitur-nav">
+          <!-- Fitur 1 -->
+          <div class="col-6 col-sm-4 col-md-2">
+            <a href="portfolio.html" class="text-decoration-none text-dark">
+              <div class="fitur-item bg-white shadow-sm rounded p-3">
+                <img
+                  src="img/icon/portfolio.png"
+                  alt="Cari Agen"
+                  style="width: 40px; height: 40px"
+                  class="mb-2"
+                />
+                <p class="mb-0 small text-black">Portfolio kami</p>
+              </div>
+            </a>
+          </div>
+          <!-- Fitur 2 -->
+          <div class="col-6 col-sm-4 col-md-2">
+            <a href="about.html" class="text-decoration-none text-dark">
+              <div class="fitur-item bg-white shadow-sm rounded p-3">
+                <img
+                  src="img/icon/about.png"
+                  alt="Jual Properti"
+                  style="width: 40px; height: 40px"
+                  class="mb-2"
+                />
+                <p class="mb-0 small text-black">Tentang kami</p>
+              </div>
+            </a>
+          </div>
+          <!-- Fitur 3 -->
+          <div class="col-6 col-sm-4 col-md-2">
+            <a href="contact.html" class="text-decoration-none text-dark">
+              <div class="fitur-item bg-white shadow-sm rounded p-3">
+                <img
+                  src="img/icon/kontak.png"
+                  alt="Lainnya"
+                  style="width: 40px; height: 40px"
+                  class="mb-2"                                                      
+                />
+                <p class="mb-0 small text-black">Hubungi Kami</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Heading Pembatas -->
+<div class="container py-2 px-lg-5 px-md-4 px-3">
+  <h5 class="mb-0">Selengkapnya tentang properti</h5>
+</div>
+<!-- Teks Panduan Geser -->
+<div class="container px-4 px-md-5 mb-2">
+  <small class="text-muted">👉 Geser ke kanan untuk melihat lebih banyak properti</small>
+</div>
+
+<!-- Swiper Carousel Start -->
+<div class="swiper mySwiper py-2 px-lg-5 px-md-4 px-3">
+  <div class="swiper-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="swiper-slide property-slide">
+      <div class="card listing-card">
+        <div class="position-relative">
+          <a href="property-details.html?id=1">
+            <img src="img/card/property-5.jpg" class="card-img-top" alt="Rumah Mewah">
+          </a>
+          <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title mb-1">Rp 1.200.000.000</h6>
+          <p class="mb-1">Rumah 2 Lantai - Jakarta Selatan</p>
+          <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill"></i> Jl. Cilandak Raya, Jakarta</p>
+          <div class="d-flex justify-content-between small text-muted">
+            <span><i class="bi bi-rulers"></i> 120 m²</span>
+            <span><i class="bi bi-house"></i> 3 KT • 2 KM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 (duplicate) -->
+    <div class="swiper-slide property-slide">
+      <div class="card listing-card">
+        <div class="position-relative">
+          <a href="property-details.html?id=1">
+            <img src="img/card/property-2.jpg" class="card-img-top" alt="Rumah Mewah">
+          </a>
+          <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title mb-1">Rp 1.200.000.000</h6>
+          <p class="mb-1">Rumah 2 Lantai - Jakarta Selatan</p>
+          <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill"></i> Jl. Cilandak Raya, Jakarta</p>
+          <div class="d-flex justify-content-between small text-muted">
+            <span><i class="bi bi-rulers"></i> 120 m²</span>
+            <span><i class="bi bi-house"></i> 3 KT • 2 KM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide "Lihat Selengkapnya" -->
+    <div class="swiper-slide property-slide">
+      <div class="card listing-card border-0 overflow-hidden position-relative">
+        <a href="shop.html">
+          <img src="img/img-more.png" alt="Lihat Selengkapnya" class="w-100 d-block" style="height: 250px; object-fit: cover;">
+          <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-50 text-white text-center py-2">
+            Lihat Properti Lainnya
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Tambahkan slide lainnya dengan pola yang sama -->
+    
+  </div>
+</div>
+
+<!-- max 6 card property yang di rekomendasi kan -->
+<!-- Rekomendasi Properti Baru -->
+<div class="container mt-5 py-2 px-lg-5 px-md-4 px-3">
+  <div class="row g-4 align-items-end">
+    <div class="col-12 col-lg-6">
+      <div class="text-start mx-auto mb-4 wow fadeIn" data-wow-delay="0.1s">
+        <h4 class="mt-4">Rekomendasi Baru</h4>
+        <p class="text-muted mb-4">
+          Dapatkan informasi terbaru tentang properti yang baru saja ditambahkan ke daftar kami.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content">
+    <div id="tab-all" class="tab-pane fade show active p-0">
+      <div class="row g-4">
+
+        <!-- Properti 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-item rounded overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <a href="property-details.html?id=1">
+                <img class="img-fluid" src="img/card/property-8.jpg" alt="Rumah Jakarta" />
+              </a>
+              <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+               <div class="position-absolute end-0 top-0 m-2">
+            <img src="https://statics.olx.co.id/olxid/seller/highlights.svg" alt="">
+              </div>  
+              <div class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Bangunan</div>
+            </div>
+            <div class="p-4 pb-0">
+              <h5 class="text-hijau mb-3">Rp 3.500.000.000</h5>
+              <a class="d-block h5 mb-2" href="#">Rumah Mewah Modern di Jakarta</a>
+              <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Jakarta, Indonesia</p>
+            </div>
+            <div class="d-flex border-top">
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-hijau me-2"></i>1000 m²</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-hijau me-2"></i>3 Kamar Tidur</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>2 Kamar Mandi</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Properti 2 sampai 6 (duplikasi konten properti kota) -->
+        <!-- Anda bisa ganti ID dan gambar agar tidak sama -->
+
+        <!-- Properti 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-item rounded overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <a href="property-details.html?id=2">
+                <img class="img-fluid" src="img/card/property-9.jpg" alt="Rumah Kota" />
+              </a>
+              <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+               <div class="position-absolute end-0 top-0 m-2">
+            <img src="https://statics.olx.co.id/olxid/seller/highlights.svg" alt="">
+          </div>
+              <div class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Rumah Kota</div>
+            </div>
+            <div class="p-4 pb-0">
+              <h5 class="text-hijau mb-3">Rp 1.000.000.000</h5>
+              <a class="d-block h5 mb-2" href="#">Rumah Kota Strategis</a>
+              <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Malang, Indonesia</p>
+            </div>
+            <div class="d-flex border-top">
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-hijau me-2"></i>800 m²</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-hijau me-2"></i>2 Kamar Tidur</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>1 Kamar Mandi</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Properti 3 -->
+        <!-- Ulangi struktur yang sama sesuai jumlah -->
+
+        <!-- Properti 4 -->
+        <!-- Properti 5 -->
+        <!-- Properti 6 -->
+        <!-- Anda bisa copy dari Properti 2 dan ubah data -->
+
+        <!-- Properti 7 - Tambahan Baru -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-item rounded overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <a href="property-details.html?id=7">
+                <img class="img-fluid" src="img/card/property-2.jpg" alt="Villa Bali" />
+              </a>
+              <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+              <div class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa Tropis</div>
+            </div>
+            <div class="p-4 pb-0">
+              <h5 class="text-hijau mb-3">Rp 2.750.000.000</h5>
+              <a class="d-block h5 mb-2" href="#">Villa Tropis dengan View Alam Bali</a>
+              <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Ubud, Bali</p>
+            </div>
+            <div class="d-flex border-top">
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-hijau me-2"></i>900 m²</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-hijau me-2"></i>2 Kamar Tidur</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>2 Kamar Mandi</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Rekomendasi Properti -->
+
+
+      <!-- Testimonial Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeIn"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Apa Kata Klien Kami?</h1>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="testimonial-item rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <p>
+                  "Dabelyuland membantu saya menemukan rumah impian dengan
+                  proses yang sangat mudah dan cepat. Timnya sangat profesional
+                  dan ramah!"
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="img-fluid flex-shrink-0 rounded"
+                    src="img/testimonial-1.jpg"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Andi Pratama</h6>
+                    <small>Pengusaha</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <p>
+                  "Pelayanan yang diberikan sangat memuaskan. Saya merasa sangat
+                  terbantu dalam mencari properti yang sesuai dengan kebutuhan
+                  keluarga saya."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="img-fluid flex-shrink-0 rounded"
+                    src="img/testimonial-2.jpg"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Rina Wijaya</h6>
+                    <small>Ibu Rumah Tangga</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <p>
+                  "Proses transaksi sangat transparan dan aman. Saya sangat
+                  merekomendasikan Dabelyuland untuk siapa saja yang mencari
+                  properti."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="img-fluid flex-shrink-0 rounded"
+                    src="img/testimonial-3.jpg"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Budi Santoso</h6>
+                    <small>Investor</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial End -->
+
+      <!-- Area Berita -->
+      <section class="container my-5">
+        <div class="d-flex align-items-center mb-4">
+          <img
+            class="img-fluid"
+            src="img/icon/logo-green.svg"
+            alt="Icon"
+            style="width: 50px; height: 50px"
+          />
+          <h4 class="ms-2 mb-0 fw-bold">Dabelyuland.NEWS</h4>
+        </div>
+
+        <div class="swiper blogSwiper">
+          <div class="swiper-wrapper">
+            <!-- Artikel 1 -->
+            <div class="swiper-slide">
+              <a
+                href="https://beritakini.co/news/7-tips-agar-tidak-tertipu-saat-membeli-rumah-dari-developer/index.html"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <div class="card border-0 shadow-sm wow fadeInUp hover-card" data-wow-delay="0.1s">
+                  <img
+                    src="https://beritakini.co/files/images/archives/20181114-wvrlncg3vf3swyrm9jp8.jpg"
+                    class="card-img-top"
+                    alt="Tips Membeli Rumah"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-primary mb-2">Tips Membeli</span>
+                    <h5 class="card-title text-dark">
+                      7 Tips Membeli Rumah Pertama Agar Tidak Tertipu Developer
+                    </h5>
+                    <p class="text-muted small">20 April 2025 • 3 Menit Baca</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Artikel 2 -->
+            <div class="swiper-slide">
+              <a href="#" class="text-decoration-none">
+                <div class="card border-0 shadow-sm wow fadeInUp hover-card" data-wow-delay="0.2s">
+                  <img
+                    src="img/card/property-3.jpg"
+                    class="card-img-top"
+                    alt="Investasi Properti"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-success mb-2">Investasi</span>
+                    <h5 class="card-title text-dark">
+                      Mengapa Properti Masih Jadi Pilihan Investasi Terbaik di
+                      2025?
+                    </h5>
+                    <p class="text-muted small">18 April 2025 • 4 Menit Baca</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Artikel 3 -->
+            <div class="swiper-slide">
+              <a href="#" class="text-decoration-none">
+                <div class="card border-0 shadow-sm wow fadeInUp hover-card" data-wow-delay="0.3s">
+                  <img
+                    src="img/card/property-4.jpg"
+                    class="card-img-top"
+                    alt="Investasi Properti"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-success mb-2">Investasi</span>
+                    <h5 class="card-title text-dark">
+                      Mengapa Properti Masih Jadi Pilihan Investasi Terbaik di
+                      2025?
+                    </h5>
+                    <p class="text-muted small">18 April 2025 • 4 Menit Baca</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Artikel 3 -->
+            <div class="swiper-slide">
+              <a href="#" class="text-decoration-none">
+                <div class="card border-0 shadow-sm wow fadeInUp hover-card" data-wow-delay="0.4s">
+                  <img
+                    src="img/card/property-4.jpg"
+                    class="card-img-top"
+                    alt="Investasi Properti"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-success mb-2">Investasi</span>
+                    <h5 class="card-title text-dark">
+                      Mengapa Properti Masih Jadi Pilihan Investasi Terbaik di
+                      2025?
+                    </h5>
+                    <p class="text-muted small">18 April 2025 • 4 Menit Baca</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Artikel 4 -->
+            <div class="swiper-slide">
+              <a href="#" class="text-decoration-none">
+                <div class="card border-0 shadow-sm wow fadeInUp hover-card" data-wow-delay="0.5s">
+                  <img
+                    src="img/card/property-5.jpg"
+                    class="card-img-top"
+                    alt="Renovasi Rumah"
+                  />
+                  <div class="card-body">
+                    <span class="badge bg-warning mb-2">Renovasi</span>
+                    <h5 class="card-title text-dark">
+                      5 Trik Renovasi Rumah Minimalis Tanpa Boros Budget
+                    </h5>
+                    <p class="text-muted small">15 April 2025 • 2 Menit Baca</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="swiper-pagination mb-3"></div>
+          <div
+            class="d-flex justify-content-center align-items-center gap-3"
+          ></div>
+        </div>
+
+        <style>
+          .hover-card {
+            transition: transform 0.3s ease;
+          }
+          .hover-card:hover {
+            transform: translateY(-10px);
+          }
+        </style>
+      </section>
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container">
+          <div class="row g-5">
+            <!-- Logo dan Deskripsi -->
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-4 d-flex align-items-center">
+                <img
+                  src="img/icon/logo-green.svg"
+                  alt="Logo Dabelyuland"
+                  style="width: 50px; height: 50px"
+                  class="me-2"
+                />
+                Dabelyuland.indonesia
+              </h5>
+              <p>
+                Dabelyuland adalah platform terpercaya untuk jual beli dan sewa
+                properti, membantu Anda menemukan hunian impian dengan mudah.
+              </p>
+            </div>
+            <!-- Tautan Cepat -->
+            <div class="col-lg-4 col-md-6">
+              <h6 class="text-white mb-4">Tautan Cepat</h6>
+              <a class="btn btn-link text-white-50" href="#">Beranda</a>
+              <a class="btn btn-link text-white-50" href="shop.html"
+                >Semua Kategori</a
+              >
+              <a class="btn btn-link text-white-50" href="about.html"
+                >Tentang Kami</a
+              >
+              <a class="btn btn-link text-white-50" href="contact.html"
+                >Kontak Kami</a
+              >
+              <a class="btn btn-link text-white-50" href="faq.html"
+                >Bantuan & Dukungan</a
+              >
+            </div>
+           <!-- Hubungi kami-->
+           <div class="col-lg-4 col-md-6">
+            <h6 class="text-white mb-4">Hubungi kami</h6>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>
+              Tunggorono, Kecamatan Jombang,<br>
+              Kabupaten Jombang, Jawa Timur 61419
+            </p>
+            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@dabelyuland.com</p>
+            <p class="mb-0"><i class="fa fa-phone-alt me-3"></i>0821-2727-7747</p>
+          </div>
+        </div>
+
+          <!-- Copyright -->
+          <div class="container mt-4 border-top pt-3">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="text-white-50"
+                  >© 2025 Dabelyuland. All rights reserved.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Swiper JS -->
+      <script>
+        var swiper = new Swiper(".blogSwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <!-- Swiper Init -->
+      <script>
+        var swiper = new Swiper(".blogSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: false,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            992: { slidesPerView: 4 },
+          },
+        });
+      </script>
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Filter sesuai harga -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

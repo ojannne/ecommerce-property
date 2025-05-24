@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shop</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- START: Tambahkan ini di dalam <head> untuk SEO -->
+  <meta name="description" content="Jual beli properti terbaik - rumah, tanah, villa, dan bangunan di Indonesia.">
+  <meta name="keywords" content="properti, rumah dijual, tanah dijual, villa, properti Indonesia, e-commerce">
+  <meta name="author" content="Dabelyuland">
+
+  <!-- Favicon -->
+  <link href="img/icon/dabelyuland.png" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Info Bar -->
+  <div class="py-2 border-bottom">
+    <div
+      class="container d-flex justify-content-between align-items-center flex-wrap"
+    >
+      <!-- Teks hanya muncul di desktop -->
+      <span class="small text-muted d-none d-md-inline"
+        >Paket Pemasaran Gratis untuk konsultasi</span
+      >
+
+      <!-- Ikon sosmed -->
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <!-- Teks "Follow us on" hanya di desktop -->
+        <span class="small text-muted">Ikuti Kami</span>
+
+        <!-- Icon Sosial Media -->
+        <a
+          href="https://www.youtube.com/@hardiwidyanto"
+          target="_blank"
+          class="text-muted"
+        >
+          <img
+            src="img/media/youtube_icon.png"
+            alt="Facebook"
+            style="width: 24px; height: 24px"
+        /></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61562823042702"
+          target="_blank"
+          class="text-muted"
+        >
+          <img
+            src="img/media/facebook_icon.png"
+            alt="YouTube"
+            style="width: 24px; height: 24px"
+        /></a>
+        <a
+          href="https://www.tiktok.com/@dabelyuland.indonesia?_t=ZS-8w6S74mJLGh&_r=1"
+          target="_blank"
+          class="text-muted"
+        >
+          <img
+            src="img/media/tiktok_icon.png"
+            alt="TikTok"
+            style="width: 24px; height: 24px"
+        /></a>
+        <a href="https://www.instagram.com/hardi.widyanto/" target="_blank">
+          <img
+            src="img/media/instagram_icon.png"
+            alt="Instagram"
+            style="width: 24px; height: 24px"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-xxl bg-white p-0">
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-hijau"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-transparent">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+        <a
+          href="#"
+          class="navbar-brand d-flex align-items-center text-center"
+        >
+          <div class="icon p-2 me-2">
+            <img
+              class="img-fluid"
+              src="img/icon/logo-green.svg"
+              alt="Icon"
+              style="width: 50px; height: 50px"
+            />
+          </div>
+          <h4 class="m-0 text-black">Dabelyuland</h4>
+        </a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto align-items-center">
+            <div class="nav-item text-center d-lg-none mt-3 px-3">
+              <h6 class="fw-bold text-muted">Akun</h6>
+              <a href="login.html#login" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <div class="d-flex align-items-center text-dark">
+                  <i class="bi bi-person me-2"></i>
+                  <span class="fw-semibold text-dark">Login / Register</span>
+                </div>
+              </a>
+            </div>
+            <a href="index.html" class="nav-item nav-link">Beranda</a>
+            <a href="shop.html" class="nav-item nav-link active">Properti</a>
+            <a href="portfolio.html" class="nav-item nav-link">Portofolio</a>
+            <div class="search-bar d-flex align-items-center p-2 rounded">
+              <i class="text-muted me-2"></i>
+              <input
+                type="text"
+                id="propertySearchInput"
+                class="form-control border-0"
+                placeholder="Lokasi, keyword, area, project, developer"
+              />
+              <button class="btn more ms-2" id="searchButton">Cari</button>
+            </div>
+            
+            <!-- Akun/User Icon -->
+            <div class="nav-item dropdown ms-3">
+              <a href="#" class="btn-icon d-none d-lg-flex icon-hover">
+                <i class="bi bi-person me-2"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end rounded-3 shadow-sm">
+              <h6 class="dropdown-header">Akun</h6>
+              <a href="login.html#login" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-person me-2"></i> Login / Register
+                <i class="bi bi-chevron-right ms-auto"></i>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+      <div class="container-fluid p-0">
+        <!-- Area Banner -->
+        <div id="mainBanner" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="">
+                <img src="https://apollo.olx.co.id/v1/files/67aaecb07ad31-OLXAUTO/image;f=webp;s=2400x0"
+                  class="d-block w-100" alt="Banner 1"></a>
+            </div>
+            <div class="carousel-item">
+              <img src="https://apollo.olx.co.id/v1/files/67f7ce620fcef-OLXAUTO/image;f=webp;s=2400x0"
+                class="d-block w-100" alt="Banner 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mainBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <!-- End Banner-->
+
+        <div class="tab-content">
+          <div class="container-fluid py-4" style="background-color: #ffffff;">
+            <div class="container">
+              <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                  <!-- FILTER HARGA BERDASARKAN KATEGORI -->
+                  <div class="p-3 mb-4 border rounded bg-white">
+                    <h5 class="mb-3 text-dark d-flex justify-content-between align-items-center toggle-dropdown"
+                      data-target="#kategoriHarga" style="cursor: pointer;">
+                      Kategori Harga
+                      <i class="fa fa-chevron-down"></i>
+                    </h5>
+                    <div id="kategoriHarga" class="nav flex-column">
+                      <a href="#" class="nav-link text-dark py-1 price-filter" data-min="0" data-max="999999999999">•
+                        Semua Harga</a>
+                      <a href="#" class="nav-link text-dark py-1 price-filter" data-min="0" data-max="500000000">• Di
+                        bawah Rp 500 juta</a>
+                      <a href="#" class="nav-link text-dark py-1 price-filter" data-min="500000001"
+                        data-max="1000000000">• Rp 500 juta - Rp 1 miliar</a>
+                      <a href="#" class="nav-link text-dark py-1 price-filter" data-min="1000000001"
+                        data-max="2000000000">• Rp 1 miliar - Rp 2 miliar</a>
+                      <a href="#" class="nav-link text-dark py-1 price-filter" data-min="2000000001"
+                        data-max="999999999999">• Di atas Rp 2 miliar</a>
+                    </div>
+                  </div>
+
+                  <!-- FILTER TIPE BANGUNAN -->
+                  <div class="p-3 mb-4 border rounded bg-white">
+                    <h5 class="mb-3 text-dark d-flex justify-content-between align-items-center toggle-dropdown"
+                      data-target="#kategoriTipe" style="cursor: pointer;">
+                      Tipe Bangunan
+                      <i class="fa fa-chevron-down"></i>
+                    </h5>
+                    <div id="kategoriTipe" class="nav flex-column">
+                      <a href="#" class="nav-link text-dark py-1 type-filter" data-type="all">• Semua Tipe</a>
+                      <a href="#" class="nav-link text-dark py-1 type-filter" data-type="rumah">• Rumah</a>
+                      <a href="#" class="nav-link text-dark py-1 type-filter" data-type="apartemen">• Apartemen</a>
+                      <a href="#" class="nav-link text-dark py-1 type-filter" data-type="bangunan">• Bangunan</a>
+                      <a href="#" class="nav-link text-dark py-1 type-filter" data-type="kantor">• Kantor</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Sidebar -->
+
+                <!-- Listing Area -->
+                <div class="col-lg-9">
+                  <div class="banner">
+                    Sudah ada 500 Properti Lainnya di Dabelyuland.co.id
+                  </div>
+
+                  <!-- All Tab -->
+                  <div id="tab-all" class="tab-pane fade show active p-0">
+                    <div class="row g-4">
+                      <!-- Card Properti: Rumah Mewah di Jakarta -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="3500000000" data-type="bangunan">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=2">
+                              <img class="img-fluid" src="img/card/property-2.jpg" alt="Rumah Mewah di Jakarta">
+                            </a>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Bangunan</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 3.500.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=2">Rumah Mewah di Jakarta</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Jakarta, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>1000 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>3 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>2 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card Properti: Villa Modern di Bali -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="10000000000" data-type="apartemen">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=3">
+                              <img class="img-fluid" src="img/card/property-3.jpg" alt="Villa Modern di Bali">
+                            </a>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Apartemen</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 10.000.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=3">Villa Modern di Bali</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Bali, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>2000 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>5 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>4 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card Properti: Kantor Terjangkau di Bandung -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="250000000" data-type="kantor">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=4">
+                              <img class="img-fluid" src="img/card/property-3.jpg" alt="Kantor Terjangkau di Bandung">
+                            </a>
+                            <span class="badge bg-warning position-absolute top-0 start-0 m-2">Disewa</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Kantor</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 250.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=4">Kantor Terjangkau di
+                              Bandung</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Bandung, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>500 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>2 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>1 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card Properti: Rumah Nyaman di Surabaya -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="500000000" data-type="rumah">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=5">
+                              <img class="img-fluid" src="img/card/property-4.jpg" alt="Rumah Nyaman di Surabaya">
+                            </a>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Rumah</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 500.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=5">Rumah Nyaman di Surabaya</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Surabaya, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>800 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>3 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>2 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card Properti: Rumah Terjangkau di Yogyakarta -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="600000000" data-type="rumah">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=6">
+                              <img class="img-fluid" src="img/card/property-5.jpg" alt="Rumah Terjangkau di Yogyakarta">
+                            </a>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Rumah</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 600.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=6">Rumah Terjangkau di
+                              Yogyakarta</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Yogyakarta, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>700 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>2 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>1 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card Properti: Rumah Modern di Semarang -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="1200000000" data-type="rumah">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=8">
+                              <img class="img-fluid" src="img/card/property-6.jpg" alt="Rumah Modern di Semarang">
+                            </a>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Rumah</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 1.200.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=8">Rumah Modern di Semarang</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Semarang, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>1200 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>3 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>2 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card Properti: Rumah Modern di Semarang -->
+                      <div class="col-lg-4 col-md-6 property-item" data-price="1200000000">
+                        <div class="property-item-inner rounded overflow-hidden">
+                          <div class="position-relative overflow-hidden">
+                            <a href="property-details.html?id=8">
+                              <img class="img-fluid" src="img/card/property-7.jpg" alt="Rumah Modern di Semarang">
+                            </a>
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">Dijual</span>
+                            <div
+                              class="bg-white rounded-top text-hijau position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                              Rumah</div>
+                          </div>
+                          <div class="p-4 pb-0">
+                            <h5 class="text-hijau mb-3">Rp 1.200.000.000</h5>
+                            <a class="d-block h5 mb-2" href="property-details.html?id=8">Rumah Modern di Semarang</a>
+                            <p><i class="fa fa-map-marker-alt text-hijau me-2"></i>Semarang, Indonesia</p>
+                          </div>
+                          <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-ruler-combined text-hijau me-2"></i>1200 m²</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                class="fa fa-bed text-hijau me-2"></i>3 Kamar Tidur</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-bath text-hijau me-2"></i>2 Kamar
+                              Mandi</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center my-4">
+                        <button id="load" class="btn-load">Muat lainnya</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- Footer Start -->
+          <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container">
+              <div class="row g-5">
+                <!-- Logo dan Deskripsi -->
+                <div class="col-lg-4 col-md-6">
+                  <h4 class="text-white mb-4 d-flex align-items-center">
+                    <img src="img/icon/logo-green.svg" alt="Logo Dabelyuland" style="width: 50px; height: 50px;"
+                      class="me-2">
+                    Dabelyuland
+                  </h4>
+                  <p>Mari wujudkan rumah impian Anda bersama Dabelyuland. Kami berkomitmen untuk memberikan properti
+                    yang berkualitas terbaik dan memberikan kepuasan pelanggan yang tak tergoyahkan.</p>
+                </div>
+                <!-- Tautan Cepat -->
+                <div class="col-lg-4 col-md-6">
+                  <h6 class="text-white mb-4">Tautan Cepat</h6>
+                  <a class="btn btn-link text-white-50" href="index.html">Beranda</a>
+                  <a class="btn btn-link text-white-50" href="shop.html">Semua Kategori</a>
+                  <a class="btn btn-link text-white-50" href="about.html">Tentang Kami</a>
+                  <a class="btn btn-link text-white-50" href="contact.html">Kontak Kami</a>
+                  <a class="btn btn-link text-white-50" href="faq.html">Bantuan & Dukungan</a>
+                </div>
+                <!-- Hubungi kami-->
+                <div class="col-lg-4 col-md-6">
+                  <h6 class="text-white mb-4">Hubungi kami</h6>
+                  <p class="mb-2">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    Tunggorono, Kecamatan Jombang,<br>
+                    Kabupaten Jombang, Jawa Timur 61419
+                  </p>
+                  <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@dabelyuland.com</p>
+                  <p class="mb-0"><i class="fa fa-phone-alt me-3"></i>0821-2727-7747</p>
+                </div>
+              </div>
+
+              <!-- Copyright -->
+              <div class="container mt-4 border-top pt-3">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <span class="text-white-50">© 2025 Dabelyuland. All rights reserved.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer End -->
+          
+          <script>
+          
+          </script>
+          <!-- JavaScript Libraries -->
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="lib/wow/wow.min.js"></script>
+          <script src="lib/easing/easing.min.js"></script>
+          <script src="lib/waypoints/waypoints.min.js"></script>
+          <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+          <!-- Template Javascript -->
+          <script src="js/main.js"></script>
+</body>
+
+</html>
